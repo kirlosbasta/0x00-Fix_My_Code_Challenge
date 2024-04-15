@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
-class rectangle():
-    
+class square():
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
@@ -20,9 +19,10 @@ class rectangle():
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
 
+
 if __name__ == "__main__":
 
-    s = rectangle(width=12, height=9)
+    s = square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.PermiterOfMySquare())
